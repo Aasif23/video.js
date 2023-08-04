@@ -1,0 +1,261 @@
+ {
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "lint:js": {
+      "name": "lint:js",
+      "command": "yarn lint:js",
+      "runAtStart": false
+    },
+    "lint:ts": {
+      "name": "lint:ts",
+      "command": "yarn lint:ts",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "printVersion": {
+      "name": "printVersion",
+      "command": "yarn printVersion",
+      "runAtStart": false
+    },
+    "test:unit": {
+      "name": "test:unit",
+      "command": "yarn test:unit",
+      "runAtStart": false
+    },
+    "test:unit:quick": {
+      "name": "test:unit:quick",
+      "command": "yarn test:unit:quick",
+      "runAtStart": false
+    },
+    "test:serversiderender": {
+      "name": "test:serversiderender",
+      "command": "yarn test:serversiderender",
+      "runAtStart": false
+    },
+    "test:integration:adapter": {
+      "name": "test:integration:adapter",
+      "command": "yarn test:integration:adapter",
+      "runAtStart": false
+    },
+    "test:integration": {
+      "name": "test:integration",
+      "command": "yarn test:integration",
+      "runAtStart": true,
+      "preview": {
+        "port": 9876
+      }
+    },
+    "test:umd:install": {
+      "name": "test:umd:install",
+      "command": "yarn test:umd:install",
+      "runAtStart": false
+    },
+    "test:umd": {
+      "name": "test:umd",
+      "command": "yarn test:umd",
+      "runAtStart": false
+    },
+    "test:crossbrowser:build:clean": {
+      "name": "test:crossbrowser:build:clean",
+      "command": "yarn test:crossbrowser:build:clean",
+      "runAtStart": false
+    },
+    "test:crossbrowser:build:lint": {
+      "name": "test:crossbrowser:build:lint",
+      "command": "yarn test:crossbrowser:build:lint",
+      "runAtStart": false
+    },
+    "test:crossbrowser:build:tsc": {
+      "name": "test:crossbrowser:build:tsc",
+      "command": "yarn test:crossbrowser:build:tsc",
+      "runAtStart": false
+    },
+    "test:crossbrowser:build:browser": {
+      "name": "test:crossbrowser:build:browser",
+      "command": "yarn test:crossbrowser:build:browser",
+      "runAtStart": false
+    },
+    "test:crossbrowser:build": {
+      "name": "test:crossbrowser:build",
+      "command": "yarn test:crossbrowser:build",
+      "runAtStart": false
+    },
+    "test:crossbrowser:test": {
+      "name": "test:crossbrowser:test",
+      "command": "yarn test:crossbrowser:test",
+      "runAtStart": false
+    },
+    "test:crossbrowser": {
+      "name": "test:crossbrowser",
+      "command": "yarn test:crossbrowser",
+      "runAtStart": false
+    },
+    "test:sdkdriver:build:clean": {
+      "name": "test:sdkdriver:build:clean",
+      "command": "yarn test:sdkdriver:build:clean",
+      "runAtStart": false
+    },
+    "test:sdkdriver:build:lint": {
+      "name": "test:sdkdriver:build:lint",
+      "command": "yarn test:sdkdriver:build:lint",
+      "runAtStart": false
+    },
+    "test:sdkdriver:build:tsc": {
+      "name": "test:sdkdriver:build:tsc",
+      "command": "yarn test:sdkdriver:build:tsc",
+      "runAtStart": false
+    },
+    "test:sdkdriver:build": {
+      "name": "test:sdkdriver:build",
+      "command": "yarn test:sdkdriver:build",
+      "runAtStart": false
+    },
+    "test:sdkdriver:test:unit": {
+      "name": "test:sdkdriver:test:unit",
+      "command": "yarn test:sdkdriver:test:unit",
+      "runAtStart": false
+    },
+    "test:sdkdriver:test:integration:browser": {
+      "name": "test:sdkdriver:test:integration:browser",
+      "command": "yarn test:sdkdriver:test:integration:browser",
+      "runAtStart": false
+    },
+    "test:sdkdriver:test:integration:run": {
+      "name": "test:sdkdriver:test:integration:run",
+      "command": "yarn test:sdkdriver:test:integration:run",
+      "runAtStart": false
+    },
+    "test:sdkdriver:test:integration": {
+      "name": "test:sdkdriver:test:integration",
+      "command": "yarn test:sdkdriver:test:integration",
+      "runAtStart": false
+    },
+    "test:sdkdriver:test": {
+      "name": "test:sdkdriver:test",
+      "command": "yarn test:sdkdriver:test",
+      "runAtStart": false
+    },
+    "test:sdkdriver": {
+      "name": "test:sdkdriver",
+      "command": "yarn test:sdkdriver",
+      "runAtStart": false
+    },
+    "test:framework:angular:install": {
+      "name": "test:framework:angular:install",
+      "command": "yarn test:framework:angular:install",
+      "runAtStart": false
+    },
+    "test:framework:angular:run": {
+      "name": "test:framework:angular:run",
+      "command": "yarn test:framework:angular:run",
+      "runAtStart": false
+    },
+    "test:framework:angular": {
+      "name": "test:framework:angular",
+      "command": "yarn test:framework:angular",
+      "runAtStart": false
+    },
+    "test:framework:no-framework:run": {
+      "name": "test:framework:no-framework:run",
+      "command": "yarn test:framework:no-framework:run",
+      "runAtStart": false
+    },
+    "test:framework:no-framework": {
+      "name": "test:framework:no-framework",
+      "command": "yarn test:framework:no-framework",
+      "runAtStart": false
+    },
+    "test:framework:react:install": {
+      "name": "test:framework:react:install",
+      "command": "yarn test:framework:react:install",
+      "runAtStart": false
+    },
+    "test:framework:react:test": {
+      "name": "test:framework:react:test",
+      "command": "yarn test:framework:react:test",
+      "runAtStart": false
+    },
+    "test:framework:react:build": {
+      "name": "test:framework:react:build",
+      "command": "yarn test:framework:react:build",
+      "runAtStart": false
+    },
+    "test:framework:react:run": {
+      "name": "test:framework:react:run",
+      "command": "yarn test:framework:react:run",
+      "runAtStart": false
+    },
+    "test:framework:react": {
+      "name": "test:framework:react",
+      "command": "yarn test:framework:react",
+      "runAtStart": false
+    },
+    "test:framework:install": {
+      "name": "test:framework:install",
+      "command": "yarn test:framework:install",
+      "runAtStart": false
+    },
+    "test:framework": {
+      "name": "test:framework",
+      "command": "yarn test:framework",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "build:es5": {
+      "name": "build:es5",
+      "command": "yarn build:es5",
+      "runAtStart": false
+    },
+    "build:js": {
+      "name": "build:js",
+      "command": "yarn build:js",
+      "runAtStart": false
+    },
+    "build:min.js": {
+      "name": "build:min.js",
+      "command": "yarn build:min.js",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "build:quick": {
+      "name": "build:quick",
+      "command": "yarn build:quick",
+      "runAtStart": false
+    },
+    "docs": {
+      "name": "docs",
+      "command": "yarn docs",
+      "runAtStart": false
+    },
+    "watch": {
+      "name": "watch",
+      "command": "yarn watch",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "yarn clean",
+      "runAtStart": false
+    }
+  }
+}
